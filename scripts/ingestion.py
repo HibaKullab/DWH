@@ -42,7 +42,7 @@ class PostgreSQLConnection:
 
     def execute_load_query(self, query):
         try:
-            self.curlsor.execute(query)
+            self.cursor.execute(query)
             self.connection.commit()
             print("Query executed successfully.")
         except (Exception, psycopg2.Error) as error:
@@ -142,16 +142,16 @@ if __name__ == "__main__":
     db_config = {
         'dbname': 'postgres',
         'user': 'postgres',
-        'password': '123',
+        'password': '123', # User postgres password
         'host': 'localhost',
         'port': 5432
     }
     db_connection = PostgreSQLConnection(**db_config)
     db_connection.connect()
     # Path to the SQL file
-    sql_file = './data/raw/Chinook_PostgreSql.sql'
+    sql_file = '../data/raw/Chinook_PostgreSql.sql'
     # db_connection.execute_load_query(sql_file)
 
-    # Execute the SQL file that creats original database schema
+    # Execute the SQL file that creates original database schema
     db_connection.create_a_new_db("digital_store_DWH")
     db_connection.execute_sql_file(sql_file)
