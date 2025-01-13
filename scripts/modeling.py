@@ -15,7 +15,7 @@ if __name__ == "__main__":
     db_connection.connect()
 
     # Path to the SQL file
-    sql_schema_file = '../sql/dw_schema.sql'
+    sql_schema_file = './sql/dw_schema.sql'
 
     # Execute the SQL file that creates data warehouse schema
     db_connection.create_a_new_db("digital_store_DWH")
