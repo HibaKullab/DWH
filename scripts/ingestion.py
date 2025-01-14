@@ -149,7 +149,7 @@ if __name__ == "__main__":
     db_connection = PostgreSQLConnection(**db_config)
     db_connection.connect()
     # Path to the SQL file
-    sql_file = '../data/raw/Chinook_PostgreSql.sql'
+    sql_file = './data/processed/Chinook_PostgreSql.sql'
     # db_connection.execute_load_query(sql_file)
 
     # Execute the SQL file that creates original database schema

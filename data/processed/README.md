@@ -1,2 +1,2 @@
-# add processed Data in this folder
-- this file is just a note, delete it after adding your data
+# added processed Data
+- made some changs to the sql code since we made a database and we don't need to create the databae using the original file anymore
