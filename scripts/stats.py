@@ -1,9 +1,9 @@
 from ingestion import PostgreSQLConnection
 
 if __name__ == "__main__":
-    # Database configuration
+    # Database configuration 'this file can be excuted aftr the ingestion and modeling files'
     db_config = {
-        'dbname': 'postgres',
+        'dbname': 'digital_store_DWH',
         'user': 'postgres',
         'password': '123', # User postgres password
         'host': 'localhost',
@@ -16,5 +16,5 @@ if __name__ == "__main__":
     # Path to the SQL file
     sql_file = '../sql/queries.sql'
 
-    # Execute the SQL file that creates data warehouse schema
+    # Execute the SQL file that has the queries
     db_connection.execute_sql_file(sql_file)
