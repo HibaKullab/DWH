@@ -36,7 +36,13 @@ class PostgreSQLConnection:
         try:
             self.cursor.execute(query)
             result = self.cursor.fetchall()
-            return result
+            print("Cursor Description:", self.cursor.description)
+            if not self.cursor.description:
+                print("No column names found in cursor description!")
+            columns = [desc[0] for desc in self.cursor.description]
+            print("Cursor Description:", self.cursor.description)
+            print("Columns:", columns)
+            return (result, columns)
         except (Exception, psycopg2.Error) as error:
             print("Error executing query:", error)
 
