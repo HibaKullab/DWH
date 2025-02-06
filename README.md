@@ -9,6 +9,8 @@ it has customers,employees, and tracks to sell
 
 the original data ERD:
 ![The Data ERD](https://github.com/user-attachments/assets/97cfcdb2-00da-4fa0-a6ec-358bb13b17f0)
+the data warehouse
+![Data Warehouse snowflake schema](https://github.com/user-attachments/assets/762307a3-4ef8-447d-bb81-e8df669686ab)
 
 ### tables
 
