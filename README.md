@@ -1,4 +1,4 @@
-# ***Digital audio store Data warehouse***
+# ***Digital audio store data warehouse***
 
 This project was made based on the chinook-database, and it's about a digital store that sells music online
 it has customers,employees, and tracks to sell
@@ -12,7 +12,7 @@ it has customers,employees, and tracks to sell
 
 [Data Link on GitHub](https://github.com/lerocha/chinook-database)
 
-the original data ERD:
+The original data ERD:
 ![The Data ERD](https://github.com/user-attachments/assets/97cfcdb2-00da-4fa0-a6ec-358bb13b17f0)
 the data warehouse
 ![Data Warehouse snowflake schema](https://github.com/user-attachments/assets/762307a3-4ef8-447d-bb81-e8df669686ab)
@@ -56,7 +56,7 @@ data-warehousing-project/
     └── stats_report.md    # Summary of findings and insights
 ```
 
-## Use Cases:
+## Use cases:
 This project aims to provide a central data source that improves performance by:
 - Tracking sales and time trends.
 - Evaluating employee performance and identifying appropriate promotions.
@@ -113,13 +113,3 @@ When running these scripts, it will:
     - Create a new schema named public and populate it with data.
     - Create a new schema named dw_schema and populate it with data.
 4. Run exploration.ipynb file to see project insights.
-
-## Installation steps:  
-To import the Backup (Restore) in pgAdmin:  
-1. Install backup file (digital_store_DWH.backup).
-2. Open pgAdmin and log in.
-3. Create a new database with the same name or a different one (if it doesn’t already exist).
-4. Right-click on the new database, then select Restore.
-5. In Filename, choose the backup file.
-6. In Format, select Custom or tar.
-7. Click Restore and wait for the process to complete.
