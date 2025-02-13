@@ -56,7 +56,8 @@ data-warehousing-project/
     └── stats_report.md    # Summary of findings and insights
 ```
 
-## Use cases:
+## Use Cases:
+
 This project aims to provide a central data source that improves performance by:
 - Tracking sales and time trends.
 - Evaluating employee performance and identifying appropriate promotions.
@@ -64,6 +65,7 @@ This project aims to provide a central data source that improves performance by:
 - Managing artist and album data.
 - Improving operational process.
 - Predicting future trends based on historical sales data.
+
 
 ## Simple dashboard:
 ![](https://private-user-images.githubusercontent.com/192356101/412934125-1c132d39-e0fd-4728-a3b9-27e1fa5d5ad0.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NTg1NjIsIm5iZiI6MTczOTQ1ODI2MiwicGF0aCI6Ii8xOTIzNTYxMDEvNDEyOTM0MTI1LTFjMTMyZDM5LWUwZmQtNDcyOC1hM2I5LTI3ZTFmYTVkNWFkMC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxNDUxMDJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kNjhkOTgxYjA5MGE1MWYwNDc5N2I3M2Q2OWNlMzBjMjI1YjdlMzkwYjFjNzI3OGUzY2JlMDgwNjg4NGFjNzA1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.hwZQcpl7-UJhHkJes9E3YsAt9CBmLscR5jCCKlH3D7Q)
@@ -108,7 +110,9 @@ ORDER BY TotalSales DESC;
 2. Check for database configuration in files:  
    ingestion.py, modeling.py and stats.py.
 3. Run scripts:  
+
 python ingestion.py &#8594; python modeling.py &#8594; python stats.py  
+
 When running these scripts, it will:  
     - Clean row data.
     - Connect to the PostgreSQL server.
