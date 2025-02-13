@@ -65,6 +65,9 @@ This project aims to provide a central data source that improves performance by:
 - Improving operational process.
 - Predicting future trends based on historical sales data.
 
+## Simple dashboard:
+![](https://github.com/HibaKullab/DWH/pull/1#issuecomment-2656808326)
+
 ## Query example:  
 Evaluating sales performance by calculating total revenue per genre.
 
