@@ -110,9 +110,9 @@ ORDER BY TotalSales DESC;
 python ingestion.py &#8594; python modeling.py &#8594; python stats.py  
 
 When running these scripts, it will:  
-    - Clean row data.
-    - Connect to the PostgreSQL server.
-    - Create a new database named digital_store_DWH (if it doesn't already exist).
-    - Create a new schema named public and populate it with data.
-    - Create a new schema named dw_schema and populate it with data.
-4. Run exploration.ipynb file to see project insights.
+    - Clean row data.  
+    - Connect to the PostgreSQL server.  
+    - Create a new database named digital_store_DWH (if it doesn't already exist).  
+    - Create a new schema named public and populate it with data.  
+    - Create a new schema named dw_schema and populate it with data.  
+4. Run exploration.ipynb file to see project insights.  
